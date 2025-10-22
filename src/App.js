@@ -95,7 +95,7 @@ const ResumeAgent = () => {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `${CONFIG.name}_Resume_${new Date().toISOString().split('T')[0]}.pdf`;
+      a.download = `${CONFIG.name}_Resume_${new Date().toISOString().split('T')[0]}.docx`;
       document.body.appendChild(a);
       a.click();
       window.URL.revokeObjectURL(url);
